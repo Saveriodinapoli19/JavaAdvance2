@@ -1,4 +1,4 @@
-/*Scrivere una funzione che accetti in input 2 int e ne stampi la somma
+package Esercizio06;/*Scrivere una funzione che accetti in input 2 int e ne stampi la somma
 Scrivere una funzione che accetti in input 1 char lo stampi
 Scrivere una funzione che accetti in input 2 Integer e ne stampi la somma
 Scrivere una funzione che accetti in input 1 Character lo stampi
