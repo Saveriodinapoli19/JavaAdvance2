@@ -1,8 +1,12 @@
 package Esercizio14;
 
+
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.List;
+
 
 //Creare un hashmap prendere tutti i valori, ordinarli e stamparli
 public class Esercizio14 {
@@ -13,8 +17,11 @@ public class Esercizio14 {
         articoli.put("Cancelleria", "Penna");
         articoli.put("Oggetto", "Dado");
         System.out.println(articoli);
-        Map<String, String> animaliOrdinati = new TreeMap<>(articoli);
-        System.out.println(animaliOrdinati);
+        List<String> keyOrder = new ArrayList<>(articoli.keySet());
+        Collections.sort(keyOrder);
+        for(String key : keyOrder){
+            System.out.println(key + ":" + articoli.get(key));
+        }
     }
 
 }
