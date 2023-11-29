@@ -1,6 +1,7 @@
 package Esercizio18;
 
-import java.time.OffsetDateTime;
+import java.time.LocalDate;
+
 
 
 /*Crea un oggetto data da questa stringa 2023-03-01T13:00:00Z
@@ -11,7 +12,7 @@ import java.time.OffsetDateTime;
     Stampa i risultati sulla console*/
 public class Esercizio18 {
     public static void main(String[] args)  {
-        OffsetDateTime date = OffsetDateTime.parse("2023-03-01T13:00:00Z");
+        LocalDate date = LocalDate.parse("2023-03-01T13:00:00Z");
         System.out.println("Data : " + date);
         String yearString =
                 String.valueOf(date.getYear());
