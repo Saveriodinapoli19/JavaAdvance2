@@ -12,21 +12,9 @@ String input = "2023-03-01T13:00:00Z";
 OffsetDateTime data = OffsetDateTime.parse(input);
 
     @Test
-    void addYear() {
-    String result = test.addYear(data);
-    assertEquals("2024-03-01T13:00Z", result);
-    }
-
-    @Test
-    void subtractMonth() {
-        String result = test.subtractMonth(data);
-        assertEquals("2023-02-01T13:00Z", result);
-    }
-
-    @Test
-    void addDay() {
-    String result = test.addDay(data);
-    assertEquals("2023-03-08T13:00Z", result);
+    void updatedYear() {
+    String result = test.updatedYear(data);
+    assertEquals("2024-02-08T13:00Z", result);
     }
 
     @Test
