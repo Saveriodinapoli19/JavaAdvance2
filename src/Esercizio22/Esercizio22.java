@@ -22,13 +22,13 @@ public class Esercizio22 {
     public static String dataMedium(OffsetDateTime data) {
         String dataMedium = data.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
         System.out.println("Data Medium : " + dataMedium);
-    return dataMedium;
+        return dataMedium;
     }
    public static String dataShort(OffsetDateTime data) {
        String dataShort = data.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
        System.out.println("Data Short : " + dataShort);
-   return dataShort;
-    }
+       return dataShort;
+   }
 
     }
 
